@@ -2,18 +2,22 @@
     color: #FF6060;
 }
 
-.tag-container{
+.more-infos{
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    justify-content: space-between;
 }
 
-
+.collapse-info{
+    width: 47%;
+}
 
 @media screen and (max-width: 768px){
 
-    .tag-container{
-        gap: 5px;
-        }
-  
-  }
+    .more-infos{
+        flex-direction: column;
+        width: 100%;
+    }
+    .collapse-info{
+        width: 100%;
+    }
+  } 

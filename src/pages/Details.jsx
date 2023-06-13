@@ -4,7 +4,8 @@ import { useParams } from "react-router-dom";
 import "../style/Details.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-
+import Collapse from "../components/Collapse";
+import Carousel from "../components/Carousel";
 import NotFound from "./NotFound";
 
 const Details = () => {
@@ -34,7 +35,28 @@ const Details = () => {
     return (
         <>
             <Header />
+            <section className="carousel">
+                <Carousel locationPictures={location?.pictures} />
+            </section>
             <Footer />
+            <section className="more-infos">
+                <div className="collapse-info">
+                    <Collapse
+                        content={{
+                            title: "Description",
+                            reply: location?.description,
+                        }}
+                    />
+                </div>
+                <div className="collapse-info">
+                    <Collapse
+                        content={{
+                            title: "Équipements",
+                            equipments: location?.equipments,
+                        }}
+                    />
+                </div>
+            </section>
         </>
     );
 };
