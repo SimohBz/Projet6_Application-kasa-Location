@@ -6,6 +6,11 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Collapse from "../components/Collapse";
 import Carousel from "../components/Carousel";
+import Title from "../components/Title";
+import Local from "../components/Local";
+import Host from "../components/Host";
+import Tag from "../components/Tag";
+import Rating from "../components/Rating";
 import NotFound from "./NotFound";
 
 const Details = () => {
@@ -38,7 +43,26 @@ const Details = () => {
             <section className="carousel">
                 <Carousel locationPictures={location?.pictures} />
             </section>
-            <Footer />
+            <section className="info">
+                {/*======== info d'appartement ======== */}
+                <div className="info-apartement">
+                    <Title locationTitle={location?.title} />
+                    <Local locationLocal={location?.location} />
+                    <div className="tag-container">
+                        {location?.tags?.map((tag, index) => {
+                            return <Tag value={tag} key={index} />;
+                        })}
+                    </div>
+                </div>
+                {/*======== info de locataire ======== */}
+                <div className="host-infos">
+                    <Host
+                        locationHostPicture={location?.host?.picture}
+                        locationHostName={location?.host?.name}
+                        />
+                    <Rating rating={location?.rating} />
+                </div>
+            </section>    
             <section className="more-infos">
                 <div className="collapse-info">
                     <Collapse
@@ -57,6 +81,7 @@ const Details = () => {
                     />
                 </div>
             </section>
+            <Footer />
         </>
     );
 };
