@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Projet6_Application-kasa-Location/static/css/main.6a0136e5.css",
+    "main.js": "/Projet6_Application-kasa-Location/static/js/main.8aeb17ca.js",
+    "static/js/787.0ce615c0.chunk.js": "/Projet6_Application-kasa-Location/static/js/787.0ce615c0.chunk.js",
+    "static/media/nature.webp": "/Projet6_Application-kasa-Location/static/media/nature.14caa108afbfc60bd174.webp",
+    "static/media/vague.webp": "/Projet6_Application-kasa-Location/static/media/vague.5393778ce8732b423b0a.webp",
+    "static/media/logo.webp": "/Projet6_Application-kasa-Location/static/media/logo.b27e3d635b72d1021614.webp",
+    "static/media/logo_black.webp": "/Projet6_Application-kasa-Location/static/media/logo_black.633b6f5f4809290ed694.webp",
+    "index.html": "/Projet6_Application-kasa-Location/index.html",
+    "static/media/Chevron_Down.svg": "/Projet6_Application-kasa-Location/static/media/Chevron_Down.72cc4a3b6e8b30f59405054bcbc9b792.svg",
+    "static/media/Chevron_Up.svg": "/Projet6_Application-kasa-Location/static/media/Chevron_Up.2019f105e69dc93786e1a096cc6d86de.svg",
+    "main.6a0136e5.css.map": "/Projet6_Application-kasa-Location/static/css/main.6a0136e5.css.map",
+    "main.8aeb17ca.js.map": "/Projet6_Application-kasa-Location/static/js/main.8aeb17ca.js.map",
+    "787.0ce615c0.chunk.js.map": "/Projet6_Application-kasa-Location/static/js/787.0ce615c0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a0136e5.css",
+    "static/js/main.8aeb17ca.js"
+  ]
+}
